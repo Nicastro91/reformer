@@ -9,6 +9,9 @@
     <%= f.label :password %>
     <%= f.text_field :password %>
 
+
+    <%= check_box_tag :should_stay, true, @checked %>
+
     <%= f.submit %>
 
 <% end %>
