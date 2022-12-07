@@ -17,6 +17,7 @@ class UsersController < ApplicationController
       def create
         @user = User.new(user_params)
         if @user.save
+        binding.pry
           if should_stay?
             redirect_to new_user_path(checked: true)
           else
